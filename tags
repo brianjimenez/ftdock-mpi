@@ -1,0 +1,93 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.2	//
+Amino_Acid	structures.h	/^struct Amino_Acid{	$/;"	s
+Angle	structures.h	/^struct Angle{$/;"	s
+Atom	structures.h	/^	struct Atom	*Atom ;$/;"	m	struct:Amino_Acid
+Atom	structures.h	/^struct Atom{$/;"	s
+CC	Makefile	/^CC              = cc$/;"	m
+CC_FLAGS	Makefile	/^CC_FLAGS        = -O -m64$/;"	m
+CC_FLAGS_FULL	Makefile	/^CC_FLAGS_FULL   = -I$(FFTW_DIR)\/include $(CC_FLAGS)$/;"	m
+CC_LINKERS	Makefile	/^CC_LINKERS      = -lm$/;"	m
+FFTW_DIR	Makefile	/^FFTW_DIR        = \/gpfs\/apps\/FFTW\/64$/;"	m
+FFTW_LINKERS	Makefile	/^FFTW_LINKERS    = -L$(FFTW_DIR)\/lib -lrfftw -lfftw$/;"	m
+GENERAL_MEMORY_PROBLEM	structures.h	58;"	d
+LIBRARY_OBJECTS	Makefile	/^LIBRARY_OBJECTS = manipulate_structures.o angles.o coordinates.o electrostatics.o grid.o qsort_scores.o$/;"	m
+MAX_ROTATIONS	structures.h	40;"	d
+Matrix	structures.h	/^struct Matrix{$/;"	s
+NUMBER_OF_CONSTRAINTS	structures.h	42;"	d
+NUMBER_TO_KEEP	structures.h	41;"	d
+PROGRAMS	Makefile	/^PROGRAMS = ftdock rpscore rpdock filter build centres randomspin$/;"	m
+Residue	structures.h	/^	struct Amino_Acid	*Residue ;	$/;"	m	struct:Structure
+SAVED_HEADER_LINES	structures.h	43;"	d
+SECURITY	Makefile	/^SECURITY	= chmod 555$/;"	m
+SHELL	Makefile	/^SHELL           = \/bin\/sh$/;"	m
+STRIP	Makefile	/^STRIP           = strip$/;"	m
+Score	structures.h	/^struct Score{$/;"	s
+Structure	structures.h	/^struct Structure{$/;"	s
+angle	structures.h	/^        int	angle[4] ;$/;"	m	struct:Score
+assign_charges	electrostatics.c	/^void assign_charges( struct Structure This_Structure ) {$/;"	f
+atom_name	structures.h	/^	char		atom_name[5] ;$/;"	m	struct:Atom
+chainID	structures.h	/^	char		chainID[2] ;$/;"	m	struct:Amino_Acid
+charge	structures.h	/^	float		charge ;$/;"	m	struct:Atom
+coord	structures.h	/^	float		coord[4] ;$/;"	m	struct:Atom
+coord	structures.h	/^	int	coord[4] ;$/;"	m	struct:Score
+description	structures.h	/^	char	description[100] ;$/;"	m	struct:Matrix
+discretise_structure	grid.c	/^void discretise_structure( struct Structure This_Structure , float grid_span , int grid_size , fftw_real *grid ) {$/;"	f
+distance	structures.h	/^	float	distance ;$/;"	m	struct:Matrix
+duplicate_structure	manipulate_structures.c	/^struct Structure duplicate_structure( struct Structure This_Structure ) {$/;"	f
+electric_field	electrostatics.c	/^void electric_field( struct Structure This_Structure , float grid_span , int grid_size , fftw_real *grid ) {$/;"	f
+electric_field_zero_core	electrostatics.c	/^void electric_field_zero_core( int grid_size , fftw_real *elec_grid , fftw_real *surface_grid , float internal_value ) {$/;"	f
+electric_point_charge	electrostatics.c	/^void electric_point_charge( struct Structure This_Structure , float grid_span , int grid_size , fftw_real *grid ) {$/;"	f
+extra	structures.h	/^        int	extra ;$/;"	m	struct:Score
+gaddress	structures.h	51;"	d
+gcentre	structures.h	53;"	d
+generate_global_angles	angles.c	/^struct Angle generate_global_angles( int angle_step ) {$/;"	f
+generate_range_of_angles	angles.c	/^struct Angle generate_range_of_angles( int angle_step , int angle_range , int z_twist , int theta , int phi ) {$/;"	f
+gord	coordinates.c	/^int gord( float position , float grid_span , int grid_size ) {$/;"	f
+ident	structures.h	/^	char			ident[256] ;$/;"	m	struct:Structure
+length	structures.h	/^	int			length ;$/;"	m	struct:Structure
+main	build.c	/^int main( int argc , char *argv[] ) {$/;"	f
+main	centres.c	/^int main( int argc , char *argv[] ) {$/;"	f
+main	filter.c	/^int main( int argc , char *argv[] ) {$/;"	f
+main	ftdock.c	/^int main( int argc , char *argv[] ) {$/;"	f
+main	randomspin.c	/^int main( int argc , char *argv[] ) {$/;"	f
+main	rpdock.c	/^int main( int argc , char *argv[] ) {$/;"	f
+main	rpscore.c	/^int main( int argc , char *argv[] ) {$/;"	f
+max	structures.h	56;"	d
+merge_structures	manipulate_structures.c	/^struct Structure merge_structures( struct Structure Structure_One , struct Structure Structure_Two ) {$/;"	f
+min	structures.h	55;"	d
+n	structures.h	/^	int	n ;$/;"	m	struct:Angle
+nc	structures.h	/^	int		nc ;$/;"	m	struct:Amino_Acid
+numerical_sort	qsort_scores.c	/^int numerical_sort( const void *a , const void *b ){$/;"	f
+occupancy	structures.h	/^	float		occupancy ;$/;"	m	struct:Atom
+olc	structures.h	/^	char		olc[2] ;$/;"	m	struct:Amino_Acid
+phi	structures.h	/^	int	*phi ;$/;"	m	struct:Angle
+pythagoras	coordinates.c	/^float pythagoras( float x1 , float y1 , float z1 , float x2 , float y2 , float z2 ) {$/;"	f
+qsort_rpscores	qsort_scores.c	/^void qsort_rpscores( struct Score *Scores , int left , int right ) {$/;"	f
+qsort_scores	qsort_scores.c	/^void qsort_scores( struct Score *Scores , int left , int right ) {$/;"	f
+radius_of_structure	manipulate_structures.c	/^float radius_of_structure( struct Structure This_Structure ) {$/;"	f
+read_pdb_to_structure	manipulate_structures.c	/^struct Structure read_pdb_to_structure( char *pdb_file_name ) {$/;"	f
+res_name	structures.h	/^	char		res_name[4] ;$/;"	m	struct:Amino_Acid
+res_seq_plus_iCode	structures.h	/^	char		res_seq_plus_iCode[6] ;$/;"	m	struct:Amino_Acid
+rotate_structure	manipulate_structures.c	/^struct Structure rotate_structure( struct Structure This_Structure , int z_twist , int theta , int phi ) {$/;"	f
+rpscore	structures.h	/^        float	rpscore ;$/;"	m	struct:Score
+score	structures.h	/^	float	score[21][21] ;$/;"	m	struct:Matrix
+score	structures.h	/^	int	score ;$/;"	m	struct:Score
+serial	structures.h	/^	int		serial ;$/;"	m	struct:Atom
+size	structures.h	/^	int		size ;$/;"	m	struct:Amino_Acid
+sizeof_Amino_Acid	structures.h	127;"	d
+sizeof_Atom	structures.h	126;"	d
+sizeof_Structure	structures.h	128;"	d
+surface_grid	grid.c	/^void surface_grid( float grid_span , int grid_size , fftw_real *grid , float surface , float internal_value ) {$/;"	f
+swap	qsort_scores.c	/^void swap( struct Score *Scores , int i , int j ) {$/;"	f
+temp_factor	structures.h	/^	float		temp_factor ;$/;"	m	struct:Atom
+theta	structures.h	/^	int	*theta ;$/;"	m	struct:Angle
+total_span_of_structures	manipulate_structures.c	/^float total_span_of_structures( struct Structure Structure_1 , struct Structure Structure_2 ) {$/;"	f
+translate_structure	manipulate_structures.c	/^struct Structure translate_structure( struct Structure This_Structure , float x_shift , float y_shift , float z_shift ) {$/;"	f
+translate_structure_onto_origin	manipulate_structures.c	/^struct Structure translate_structure_onto_origin( struct Structure This_Structure ) {$/;"	f
+write_structure_to_pdb	manipulate_structures.c	/^void write_structure_to_pdb( struct Structure This_Structure , char *pdb_file_name ) {$/;"	f
+z_twist	structures.h	/^	int	*z_twist ;$/;"	m	struct:Angle
