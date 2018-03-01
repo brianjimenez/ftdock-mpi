@@ -6,6 +6,7 @@ The file [grid.c](grid.c) includes a modified version of the function to calcula
 
 
 ##Setup
+
 Please, edit Makefile in order to include your local FFTW 2.1.5 library installation path.
 
 To compile:
